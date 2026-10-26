@@ -1,0 +1,28 @@
+name: CapsFlow
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    macOS: '14.0'
+settings:
+  base:
+    SWIFT_VERSION: '5.0'
+    CODE_SIGN_IDENTITY: '-'
+    CODE_SIGN_STYLE: Manual
+    ENABLE_HARDENED_RUNTIME: YES
+    GENERATE_INFOPLIST_FILE: YES
+    INFOPLIST_KEY_LSUIElement: YES
+    INFOPLIST_KEY_CFBundleDisplayName: CapsFlow
+    INFOPLIST_KEY_NSHumanReadableCopyright: '© 2026 CapsFlow'
+    MARKETING_VERSION: '1.0'
+    CURRENT_PROJECT_VERSION: '1'
+targets:
+  CapsFlow:
+    type: application
+    platform: macOS
+    sources: [Sources]
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.example.CapsFlow
+      COMBINE_HIDPI_IMAGES: YES
+    dependencies:
+      - sdk: Carbon.framework
+      - sdk: IOKit.framework

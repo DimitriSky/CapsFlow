@@ -1,0 +1,38 @@
+# macOS and editor state
+.DS_Store
+.AppleDouble
+.LSOverride
+*.xcuserstate
+xcuserdata/
+.vscode/
+.idea/
+
+# Generated builds and distribution artifacts
+build/
+DerivedData/
+output/
+dist/
+*.app/
+*.dSYM/
+*.xcarchive/
+*.ipa
+*.dmg
+*.pkg
+*.zip
+*.log
+
+# Local configuration and signing material
+.env
+.env.*
+!.env.example
+*.local
+*.local.*
+*.xcconfig
+*.p12
+*.pfx
+*.cer
+*.mobileprovision
+*.provisionprofile
+*.pem
+*.key
+*.p8
