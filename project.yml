@@ -19,10 +19,11 @@ targets:
   CapsFlow:
     type: application
     platform: macOS
-    sources: [Sources]
+    sources: [Sources, Assets.xcassets]
     settings:
       PRODUCT_BUNDLE_IDENTIFIER: com.example.CapsFlow
       COMBINE_HIDPI_IMAGES: YES
+      ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
     dependencies:
       - sdk: Carbon.framework
       - sdk: IOKit.framework
